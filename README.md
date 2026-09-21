@@ -4,7 +4,7 @@ Reading orders for *Země v roce 40 000*.
 
 ## Installation
 
-Once this repository is published on GitHub, install with:
+Install from GitHub with:
 
 ```r
 install.packages("remotes")
