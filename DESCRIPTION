@@ -1,0 +1,15 @@
+Package: storyline
+Title: Reading Orders for Země v roce 40 000
+Version: 0.1.0
+Depends: R (>= 3.5.0)
+Authors@R: person("Petr", "Tureček", role = c("aut", "cre"), email = "petr.turecek@natur.cuni.cz")
+Author: Petr Tureček [aut, cre]
+Maintainer: Petr Tureček <petr.turecek@natur.cuni.cz>
+Description: Provides chronological, kairological, and reproducibly randomized
+    chapter contents for the fiction book Země v roce 40 000. Optional chapter
+    labels and openings can be printed and written as UTF-8 tab-separated text.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/costlysignalling/storyline
+BugReports: https://github.com/costlysignalling/storyline/issues
+RoxygenNote: 7.3.2
