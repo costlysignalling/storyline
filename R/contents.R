@@ -30,7 +30,7 @@ contentsKairological <- function(openings = TRUE, labels = FALSE,
 
 #' @rdname contentsChronological
 #' @param seed Integer seed for a reproducible random reading order. With the
-#'   default `NA`, each call uses the current random-number state. When a seed
+#'   default `NA`, each call requests a fresh random sequence. When a seed
 #'   is supplied, the caller's random-number state is restored. Unless `file`
 #'   is supplied, a saved file includes the seed in its name.
 #' @export
@@ -42,7 +42,9 @@ contentsRandom <- function(openings = TRUE, labels = FALSE,
     stop("`seed` must be NA or one finite integer.", call. = FALSE)
   }
   if (is.na(seed)) {
-    order <- sample.int(nrow(.chapters))
+    order <- as.integer(random::randomSequence(
+      min = 1, max = nrow(.chapters), col = 1
+    ))
   } else {
     if (!is.numeric(seed) || !is.finite(seed) ||
         seed < -2147483647 || seed > 2147483647 || seed != trunc(seed)) {
