@@ -1,3 +1,4 @@
 export(contentsChronological)
 export(contentsKairological)
 export(contentsRandom)
+export(contentsNew)

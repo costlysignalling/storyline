@@ -1,6 +1,6 @@
 Package: storyline
 Title: Reading Orders for MONSTRUM
-Version: 0.2.0
+Version: 0.3.0
 Depends: R (>= 3.5.0)
 Authors@R: person("Petr", "Tureček", role = c("aut", "cre"), email = "petr.turecek@natur.cuni.cz")
 Author: Petr Tureček [aut, cre]
